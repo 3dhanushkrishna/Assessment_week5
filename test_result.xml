@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="2" tests="9" time="0.736" timestamp="2022-04-03T19:57:07.256322" hostname="Vijay"><testcase classname="test_Question1" name="test_square_root[25-5]" time="0.006" /><testcase classname="test_Question1" name="test_square_root[36-6]" time="0.017" /><testcase classname="test_Question1" name="test_square_root[12-3]" time="0.003"><skipped type="pytest.xfail" message="" /></testcase><testcase classname="test_Question1" name="test_quadratic_equation[2-3-4-5]" time="0.002"><skipped type="pytest.skip" message="no need">C:\Users\ELCOT\PycharmProjects\Assessment week5\test_Question1.py:10: no need</skipped></testcase><testcase classname="test_Question1" name="test_cels_to_farh[3-37.4]" time="0.003" /><testcase classname="test_Question1" name="test_cels_to_farh[4-32.0]" time="0.003"><failure message="assert 39.2 == 32.0">celsius = 4, res = 32.0
+
+    @pytest.mark.parametrize("celsius,res",[(3,37.4),(4,32.0)])
+    def test_cels_to_farh(celsius,res):
+        cel=Question1.cels_to_farh(celsius)
+&gt;       assert cel == res
+E       assert 39.2 == 32.0
+
+test_Question1.py:19: AssertionError</failure></testcase><testcase classname="test_Question1" name="test_pos_neg_zero" time="0.003" /><testcase classname="test_Question1" name="test_natural_num[16-136]" time="0.003" /><testcase classname="test_Question1" name="test_natural_num[10-100]" time="0.008"><failure message="assert 55 == 100">num = 10, res = 100
+
+    @pytest.mark.parametrize("num,res",[(16,136),(10,100)])
+    def test_natural_num(num,res):
+        natnum=Question1.natural_num(num)
+&gt;       assert natnum == res
+E       assert 55 == 100
+
+test_Question1.py:32: AssertionError</failure></testcase></testsuite></testsuites>
